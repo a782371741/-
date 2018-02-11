@@ -6,33 +6,33 @@ using System.Text;
 
     public class CreditAccount : Account
     {
-        double Creditline;
-        public CreditAccount(string id, string pwd, double money, double Creditline) : base(id, pwd, money)
+        double creditLine;
+        public CreditAccount(string id, string pwd, double money, double creditLine) : base(id, pwd, money)
         {
-            this.Creditline = Creditline;
+            this.creditLine = creditLine;
         }
-        public double getCreditline()
+        public double GetCreditLine()
         {
-            return Creditline;
+            return creditLine;
         }
 
-        public void setCreditline(double val)
+        public void SetCreditLine(double val)
         {
-            this.Creditline = val;
+            this.creditLine = val;
         }
-        public bool addCreditline(double Creditline)
+        public bool AddCreditLine(double creditLine)
         {
-            if (Creditline < 0) return false;  //卫语句
+            if (creditLine < 0) return false;  //卫语句
 
-            this.Creditline += Creditline;
+            this.creditLine += creditLine;
             return true;
         }
 
-        public bool reduceCreditline(double Creditline)
+        public bool ReduceCreditLine(double creditLine)
         {
-            if (this.Creditline >= Creditline)
+            if (this.creditLine >= creditLine)
             {
-                this.Creditline -= Creditline;
+                this.creditLine -= creditLine;
                 return true;
             }
 

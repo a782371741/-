@@ -32,7 +32,7 @@ public class ATM {
             string op = GetInput();
             if (op == "1")
             {
-                Show("balance: " + account.getMoney());
+                Show("balance: " + account.GetMoney());
             }
             else if (op == "2")
             {
@@ -44,7 +44,7 @@ public class ATM {
                 if (ok) Show("ok");
                 else Show("eeer");
 
-                Show("balance: " + account.getMoney());
+                Show("balance: " + account.GetMoney());
             }
             else if (op == "3")
             {
@@ -56,7 +56,7 @@ public class ATM {
                 if (ok) Show("ok");
                 else Show("eeer");
 
-                Show("balance: " + account.getMoney());
+                Show("balance: " + account.GetMoney());
 
             }
         }
@@ -68,7 +68,7 @@ public class ATM {
         string op1 = GetInput();
         if (op1 == "1")
         {
-            Show("balance: " + Creditaccount.getMoney());
+            Show("balance: " + Creditaccount.GetMoney());
                
         }
         else if (op1 == "2")
@@ -81,7 +81,7 @@ public class ATM {
             if (ok) Show("ok");
             else Show("eeer");
 
-            Show("balance: " + Creditaccount.getMoney());
+            Show("balance: " + Creditaccount.GetMoney());
         }
         else if (op1 == "3")
         {
@@ -93,13 +93,13 @@ public class ATM {
             if (ok) Show("ok");
             else Show("eeer");
 
-            Show("balance: " + Creditaccount.getMoney());
+            Show("balance: " + Creditaccount.GetMoney());
 
         }
             else if (op1 == "4")
             {
                 Show("Creditline");
-                Show("Creditline:" + Creditaccount.getCreditline());
+                Show("Creditline:" + Creditaccount.GetCreditLine());
             }
             else if (op1 == "5")
             {
@@ -107,11 +107,11 @@ public class ATM {
                 string screditline = GetInput();
                 double creditline = double.Parse(screditline);
 
-                bool ok = Creditaccount.addCreditline(creditline);
+                bool ok = Creditaccount.AddCreditLine(creditline);
                 if (ok) Show("ok");
                 else Show("eeer");
 
-                Show("balance: " + Creditaccount.getCreditline());
+                Show("balance: " + Creditaccount.GetCreditLine());
             }
         }
 

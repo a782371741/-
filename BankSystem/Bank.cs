@@ -31,15 +31,7 @@ public class Bank {
 				return account;
 			}
 		}
-        //for (int i = 0; i < accounts.Count; i++)
-        //{
-        //    Account account = accounts[i];
 
-        //    if( account.IsMatch(id, pwd))
-        //    {
-        //        return account;
-        //    }
-        //}
 
 		return null;
 	}
@@ -70,15 +62,7 @@ public class Bank {
                 return Creditaccount;
             }
         }
-        //for (int i = 0; i < accounts.Count; i++)
-        //{
-        //    Account account = accounts[i];
 
-        //    if( account.IsMatch(id, pwd))
-        //    {
-        //        return account;
-        //    }
-        //}
 
         return null;
     }

@@ -1,45 +1,44 @@
 
 public class Account {
 
-    double money; //decimal money;
+    double money; 
 	string id;
 	string pwd;
-	//string name;
-	
+
 	public Account( string id, string pwd, double money )
 	{
-		//if( money < 0 ) throw new Exception("....");
+	
 		this.id = id;
 		this.pwd = pwd;
 		this.money = money;
 	}
 	
-	public double getMoney()
+	public double GetMoney()
 	{
 		return money;
 	}
 	
-	public void setMoney(double val)
+	public void SetMoney(double val)
 	{
 		this.money = val;
 	}
 	
-	public string getId()
+	public string GetId()
 	{
 		return id;
 	}
 		
-	public void setId(string id)
+	public void SetId(string id)
 	{
 		this.id = id;
 	}
 		
-	public string getpwd()
+	public string Getpwd()
 	{
 		return pwd;
 	}
 		
-	public void setPwd(string pwd)
+	public void SetPwd(string pwd)
 	{
 		this.pwd = pwd;
 	}
